@@ -1,0 +1,20 @@
+/*Вложенная деструктуризация*/
+
+
+const obj = {
+  'title':'BAZINGAAAAAAAAAAAAAAAAAA!!!!!!',
+  'parametrs' : {
+    'width':'100px',
+    'height':'100px'
+  },
+  'children': ['a', 'v', [1]]
+}
+
+const {title} = obj;
+const {parametrs: {width, height} } = obj;
+const {children: [,,[last]] } = obj;
+
+
+console.log(title); // 'BAZINGAAAAAAAAAAAAAAAAAA!!!!!!'
+console.log(width,height); // '100px' '100px'
+console.log(last); // 1
