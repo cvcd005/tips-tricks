@@ -1,3 +1,6 @@
+## Example custom copyToClipboard 
+
+```jsx
 import { useState, useRef } from "react";
 
 const App = () => {
@@ -38,3 +41,4 @@ const App = () => {
 };
 
 export default App;
+```

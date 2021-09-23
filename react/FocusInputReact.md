@@ -1,6 +1,6 @@
-//Simple way to focus input in React
+## Simple way to focus input in React
 
-
+```jsx 
 const utilizeFocus = () => {
     const ref = React.createRef()
     const setFocus = () => {ref.current &&  ref.current.focus()}
@@ -8,14 +8,13 @@ const utilizeFocus = () => {
     return {setFocus, ref} 
 }
 
-
 class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props)
     this.inputFocus = utilizeFocus()
   }
 
-  render(){
+  render() {
     return (
       <> 
           <button onClick={this.inputFocus.setFocus}>
@@ -26,3 +25,4 @@ class App extends Component {
     )
   } 
 }
+```

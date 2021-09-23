@@ -1,10 +1,15 @@
+## Замена текстовой ноды 
+
+```javascript
 // For example we want change text in all div on <p>text</p>
-//<body>
+// Before 
+// <body>
 //   <p>Boom</p>
 //   text
 //   <div>Bam</div>
 // </body>
-//const elements = prettify(document);
+// After
+// const elements = prettify(document);
 // <body>
 //   <p>Boom</p>
 //   text
@@ -28,3 +33,4 @@ const prettify = (html) => {
     }
   })
 };
+```

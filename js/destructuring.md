@@ -1,5 +1,6 @@
-/*Вложенная деструктуризация*/
+### Вложенная деструктуризация
 
+```javascript 
 const obj = {
   'title':'BAZINGAAAAAAAAAAAAAAAAAA!!!!!!',
   'parametrs' : {
@@ -9,11 +10,12 @@ const obj = {
   'children': ['a', 'v', [1]]
 }
 
-const {title:mainTitle} = obj;
-const {parametrs: {width, height} } = obj;
-const {children: [,,[last]] } = obj;
+const { title:mainTitle } = obj;
+const { parametrs: { width, height }} = obj;
+const { children: [,,[last]] } = obj;
 
 
 console.log(mainTitle); // 'BAZINGAAAAAAAAAAAAAAAAAA!!!!!!'
 console.log(width,height); // '100px' '100px'
 console.log(last); // 1
+```
